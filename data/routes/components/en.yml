@@ -10,21 +10,499 @@
 
 # Setting an ID is optional, but it will allow referring to this item in internal links
 # the ID can be a app-wide-unique string, or a GUID value.
-id: component-page
+id: components-page
 
 # Route-level fields are appropriate for page level data like <title> contents
 # Define route level fields in /sitecore/definitions/routes.sitecore
 fields:
-  pageTitle: Components
-# Define the page layout starting at the root placeholder - in this case, 'jss-main'
+  pageTitle: Authorable Components
+# Define the page layout starting at the root placeholder - in this case, 'main'
 # root placeholder names are defined in the package.json config section (required for Sitecore deployment)
 placeholders:
   jss-main:
-    - componentName: ContentBlock
+    - componentName: AlertComponent
       fields:
-        heading: Welcome to Sitecore JSS
-        # to author content in YAML, use _multi-line values_ (prefixed with | + endline)
-        # as long as the same indent is preserved at the beginning of each line, no escaping
-        # is required at all in the value, making it easy to read
-        content: |
-          <p>Components Content</p>
+        className: default
+        closeText: default
+        role: default
+    - componentName: AlertTitleComponent
+      fields:
+        className: default
+    - componentName: AppBarComponent
+      fields:
+        className: default
+        enableColorOnDark: false
+    - componentName: AvatarComponent
+      fields:
+        alt: default
+        className: default
+        sizes: default
+        src: default
+        srcSet: default
+    - componentName: AvatarGroupComponent
+      fields:
+        className: default
+        total: 0
+    - componentName: BadgeComponent
+      fields:
+        className: default
+        invisible: false
+        max: 0
+        showZero: false
+    - componentName: BottomNavigationComponent
+      fields:
+        className: default
+        showLabels: false
+    - componentName: BottomNavigationActionComponent
+      fields:
+        className: default
+        showLabel: false
+    - componentName: BreadcrumbsComponent
+      fields:
+        className: default
+        expandText: default
+    - componentName: ButtonComponent
+      fields:
+        className: default
+        disabled: false
+        disableElevation: false
+        disableFocusRipple: false
+        disableRipple: false
+        focusVisibleClassName: default
+        fullWidth: false
+        href: default
+    - componentName: ButtonBaseComponent
+      fields:
+        centerRipple: false
+        className: default
+        disabled: false
+        disableRipple: false
+        disableTouchRipple: false
+        focusRipple: false
+        focusVisibleClassName: default
+        tabIndex: 0
+    - componentName: ButtonGroupComponent
+      fields:
+        className: default
+        disabled: false
+        disableElevation: false
+        disableFocusRipple: false
+        disableRipple: false
+        fullWidth: false
+    - componentName: CardComponent
+      fields:
+        className: default
+    - componentName: CardActionAreaComponent
+      fields:
+        className: default
+        focusVisibleClassName: default
+    - componentName: CardActionsComponent
+      fields:
+        className: default
+        disableSpacing: false
+    - componentName: CardContentComponent
+      fields:
+        className: default
+    - componentName: CardHeaderComponent
+      fields:
+        className: default
+        disableTypography: false
+    - componentName: CheckboxComponent
+      fields:
+        checked: false
+        defaultChecked: false
+        disabled: false
+        disableRipple: false
+        id: default
+        indeterminate: false
+        required: false
+    - componentName: ChipComponent
+      fields:
+        className: default
+        clickable: false
+        disabled: false
+    - componentName: CircularProgressComponent
+      fields:
+        className: default
+        thickness: 0
+        value: 0
+    - componentName: CollapseComponent
+      fields:
+        className: default
+        in: false
+    - componentName: DialogActionsComponent
+      fields:
+        className: default
+        disableSpacing: false
+    - componentName: DialogContentComponent
+      fields:
+        className: default
+        dividers: false
+    - componentName: DialogTitleComponent
+      fields:
+        className: default
+        id: default
+    - componentName: DividerComponent
+      fields:
+        absolute: false
+        className: default
+        flexItem: false
+        light: false
+        role: default
+    - componentName: DrawerComponent
+      fields:
+        className: default
+        hideBackdrop: false
+        open: false
+    - componentName: FabComponent
+      fields:
+        className: default
+        disabled: false
+        disableFocusRipple: false
+        disableRipple: false
+        focusVisibleClassName: default
+        href: default
+    - componentName: FilledInputComponent
+      fields:
+        autoComplete: default
+        autoFocus: false
+        disabled: false
+        disableUnderline: false
+        error: false
+        fullWidth: false
+        hiddenLabel: false
+        id: default
+        multiline: false
+        name: default
+        placeholder: default
+        readOnly: false
+        required: false
+        type: default
+    - componentName: FormControlComponent
+      fields:
+        className: default
+        disabled: false
+        error: false
+        focused: false
+        fullWidth: false
+        hiddenLabel: false
+        required: false
+    - componentName: FormGroupComponent
+      fields:
+        className: default
+        row: false
+    - componentName: FormHelperTextComponent
+      fields:
+        className: default
+        disabled: false
+        error: false
+        filled: false
+        focused: false
+        required: false
+    - componentName: FormLabelComponent
+      fields:
+        className: default
+        disabled: false
+        error: false
+        filled: false
+        focused: false
+        required: false
+    - componentName: GridComponent
+      fields:
+        className: default
+        container: false
+        item: false
+        zeroMinWidth: false
+    - componentName: IconComponent
+      fields:
+        baseClassName: default
+        className: default
+    - componentName: IconButtonComponent
+      fields:
+        className: default
+        disabled: false
+        disableFocusRipple: false
+        disableRipple: false
+    - componentName: InputComponent
+      fields:
+        autoComplete: default
+        autoFocus: false
+        disabled: false
+        disableUnderline: false
+        error: false
+        fullWidth: false
+        id: default
+        multiline: false
+        name: default
+        placeholder: default
+        readOnly: false
+        required: false
+        type: default
+    - componentName: InputBaseComponent
+      fields:
+        ariadescribedby: default
+        autoComplete: default
+        autoFocus: false
+        className: default
+        disabled: false
+        disableInjectingGlobalStyles: false
+        error: false
+        fullWidth: false
+        id: default
+        multiline: false
+        name: default
+        placeholder: default
+        readOnly: false
+        required: false
+        type: default
+    - componentName: InputLabelComponent
+      fields:
+        disableAnimation: false
+        disabled: false
+        error: false
+        focused: false
+        required: false
+        shrink: false
+    - componentName: LinearProgressComponent
+      fields:
+        className: default
+        value: 0
+        valueBuffer: 0
+    - componentName: LinkComponent
+      fields:
+        className: default
+    - componentName: ListComponent
+      fields:
+        className: default
+        dense: false
+        disablePadding: false
+    - componentName: ListItemComponent
+      fields:
+        autoFocus: false
+        button: false
+        className: default
+        dense: false
+        disabled: false
+        disableGutters: false
+        disablePadding: false
+        divider: false
+        focusVisibleClassName: default
+        selected: false
+    - componentName: ListItemAvatarComponent
+      fields:
+        className: default
+    - componentName: ListItemButtonComponent
+      fields:
+        autoFocus: false
+        dense: false
+        disabled: false
+        disableGutters: false
+        divider: false
+        focusVisibleClassName: default
+        href: default
+        selected: false
+    - componentName: ListItemIconComponent
+      fields:
+        className: default
+    - componentName: ListItemSecondaryActionComponent
+      fields:
+        className: default
+    - componentName: ListItemTextComponent
+      fields:
+        className: default
+        disableTypography: false
+        inset: false
+    - componentName: ListSubheaderComponent
+      fields:
+        className: default
+        disableGutters: false
+        disableSticky: false
+        inset: false
+    - componentName: MenuItemComponent
+      fields:
+        autoFocus: false
+        dense: false
+        disabled: false
+        disableGutters: false
+        divider: false
+        focusVisibleClassName: default
+        role: default
+        selected: false
+        tabIndex: 0
+    - componentName: MenuListComponent
+      fields:
+        autoFocus: false
+        autoFocusItem: false
+        className: default
+        disabledItemsFocusable: false
+        disableListWrap: false
+    - componentName: NativeSelectComponent
+      fields:
+        className: default
+    - componentName: OutlinedInputComponent
+      fields:
+        autoComplete: default
+        autoFocus: false
+        disabled: false
+        error: false
+        fullWidth: false
+        id: default
+        multiline: false
+        name: default
+        notched: false
+        placeholder: default
+        readOnly: false
+        required: false
+        type: default
+    - componentName: PaginationComponent
+      fields:
+        className: default
+        disabled: false
+        hideNextButton: false
+        hidePrevButton: false
+        showFirstButton: false
+        showLastButton: false
+    - componentName: PaginationItemComponent
+      fields:
+        className: default
+        disabled: false
+        selected: false
+    - componentName: PaperComponent
+      fields:
+        className: default
+        square: false
+    - componentName: RadioComponent
+      fields:
+        checked: false
+        disabled: false
+        disableRipple: false
+        id: default
+        name: default
+        required: false
+    - componentName: RadioGroupComponent
+      fields:
+        name: default
+    - componentName: RatingComponent
+      fields:
+        className: default
+        defaultValue: 0
+        disabled: false
+        highlightSelectedOnly: false
+        max: 0
+        name: default
+        readOnly: false
+        value: 0
+    - componentName: ScopedCssBaselineComponent
+      fields:
+        className: default
+        enableColorScheme: false
+    - componentName: SkeletonComponent
+      fields:
+        className: default
+    - componentName: SliderComponent
+      fields:
+        arialabelledby: default
+        disabled: false
+        disableSwap: false
+        isRtl: false
+        max: 0
+        min: 0
+        name: default
+        step: 0
+        tabIndex: 0
+    - componentName: SnackbarComponent
+      fields:
+        autoHideDuration: 0
+        className: default
+        disableWindowBlurListener: false
+        open: false
+        resumeHideDuration: 0
+    - componentName: SnackbarContentComponent
+      fields:
+        className: default
+        role: default
+    - componentName: SpeedDialIconComponent
+      fields:
+        className: default
+        open: false
+    - componentName: StepComponent
+      fields:
+        active: false
+        className: default
+        completed: false
+        disabled: false
+        expanded: false
+        last: false
+    - componentName: StepperComponent
+      fields:
+        alternativeLabel: false
+        className: default
+        nonLinear: false
+    - componentName: SvgIconComponent
+      fields:
+        className: default
+        htmlColor: default
+        inheritViewBox: false
+        shapeRendering: default
+        titleAccess: default
+        viewBox: default
+    - componentName: SwitchComponent
+      fields:
+        checked: false
+        className: default
+        defaultChecked: false
+        disabled: false
+        disableRipple: false
+        id: default
+        required: false
+    - componentName: TabComponent
+      fields:
+        className: default
+        disabled: false
+        disableFocusRipple: false
+        disableRipple: false
+        wrapped: false
+    - componentName: TableComponent
+      fields:
+        className: default
+        stickyHeader: false
+    - componentName: TabsComponent
+      fields:
+        allowScrollButtonsMobile: false
+        arialabel: default
+        arialabelledby: default
+        centered: false
+        className: default
+        selectionFollowsFocus: false
+        visibleScrollbar: false
+    - componentName: TextFieldComponent
+      fields:
+        autoComplete: default
+        autoFocus: false
+        className: default
+        disabled: false
+        error: false
+        fullWidth: false
+        id: default
+        multiline: false
+        name: default
+        placeholder: default
+        required: false
+        select: false
+        type: default
+    - componentName: ToggleButtonGroupComponent
+      fields:
+        className: default
+        disabled: false
+        exclusive: false
+        fullWidth: false
+    - componentName: ToolbarComponent
+      fields:
+        className: default
+        disableGutters: false
+    - componentName: TypographyComponent
+      fields:
+        className: default
+        gutterBottom: false
+        noWrap: false
+        paragraph: false

@@ -32,6 +32,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.3",
     "@sitecore-jss/sitecore-jss-react": "^16.0.0",
     "@sitecore-jss/sitecore-jss-tracking": "^16.0.0",
     "@types/jest": "^27.5.1",
