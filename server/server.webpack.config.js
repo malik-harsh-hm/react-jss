@@ -8,7 +8,7 @@ const webpack = require('webpack');
 module.exports = {
   name: 'server-config',
   mode: 'production',
-  entry: path.resolve(__dirname, './server.js'),
+  entry: path.resolve(__dirname, './server.tsx'),
   target: 'node',
   output: {
     path: path.resolve(__dirname, '../build'),

@@ -21,7 +21,21 @@ export const routePatterns = [
 //    Not needed if not using connected GraphQL.
 // SitecoreContext: provides component resolution and context services via withSitecoreContext
 // Router: provides a basic routing setup that will resolve Sitecore item routes and allow for language URL prefixes.
-class AppRoot extends React.Component {
+
+interface AppRootProps {
+  ssrState?: any;
+  path?: any;
+  Router: any;
+  graphQLClient: any;
+}
+
+interface AppRootState {
+  ssrRenderComplete: any
+}
+
+
+class AppRoot extends React.Component<AppRootProps, AppRootState> {
+  sitecoreContext: any;
   constructor(props) {
     super(props);
 
