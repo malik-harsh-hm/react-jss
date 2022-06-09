@@ -26,7 +26,8 @@ type Props = {
 };
 
 const CheckboxComponent = (props: Props): JSX.Element => {
-  return (<Checkbox {...mapSitecorePropsToMUIProps(props)}></Checkbox>);
+  return (<Checkbox {...mapSitecorePropsToMUIProps(props)}></Checkbox>
+  );
 };
 
 export default CheckboxComponent;
